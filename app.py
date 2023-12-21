@@ -5,7 +5,7 @@ from joblib import load
 # from mysql.connector import Error
 
 # Load model
-model = load('/workspaces/Klasifikasi-Kandidat-Outsourcing-Decision-Tree-C4.5/app/model_klasifikasi_dctc45.model')
+model = load('/workspaces/deployment-streamlit/model_klasifikasi_dctc45.model')
 
 # Streamlit app
 def main():
@@ -82,7 +82,7 @@ def main():
 #                     st.info("MySQL connection is closed")
 
             # Display prediction result
-            st.success(f"Hasil Prediksi: {hasil_prediksi_str}")
+            st.success(f"Hasil Prediksi : {hasil_prediksi_str}")
 
         except Exception as e:
             st.error(f"Error during prediction: {e}")
