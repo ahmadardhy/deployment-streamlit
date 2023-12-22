@@ -5,7 +5,7 @@ from joblib import load
 # from mysql.connector import Error
 
 # Load model
-model = load('/workspaces/deployment-streamlit/model_klasifikasi_dctc45.model')
+model = load('model_klasifikasi_dctc45.model')
 
 # Streamlit app
 def main():
